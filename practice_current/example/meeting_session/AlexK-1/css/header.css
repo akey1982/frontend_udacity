@@ -1,0 +1,11 @@
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+li a {
+    text-decoration: none;
+    padding: 10px;
+    color: red;
+}

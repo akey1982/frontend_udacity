@@ -1,0 +1,37 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto 40px;
+    grid-template-areas: 
+        "header"
+        "content"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+
+}
+
+.menu {
+    grid-area: content;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+li{
+
+margin: 30px;
+
+
+}

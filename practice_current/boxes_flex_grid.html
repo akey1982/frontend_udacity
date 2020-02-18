@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 1</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+
+  <style>
+  .container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd sd sd main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      border: 2px solid yellow;
+      justify-content: center;
+  }
+  .box{
+    display: flex;
+    border: 1px solid red;
+    background: #F8FA9D;
+    margin: 10px;
+    }
+  .header{
+    grid-area:hd;
+  }
+  .footer{
+    grid-area:ft;
+  }
+  .sidebar{
+    grid-area:sd;
+  }
+  .content{
+
+    grid-area:main;
+  }
+  </style>
+  </head>
+
+  <body>
+  <div class = "container">
+    <div class="header box">Header
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quasi unde tempora accusamus sint voluptate fugiat aliquid, eius quibusdam pariatur dolores, animi fuga dolor. Officia non aperiam adipisci amet reprehenderit.</p>
+    </div>
+    <div class="sidebar box">Sidebar
+
+        <section>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda quo, iusto consequuntur at reprehenderit numquam sint earum magnam similique quas dolorum quasi saepe laudantium! Suscipit, possimus veritatis. Quidem, suscipit!
+
+        </section>
+
+    </div>
+    <div class="content box">Content</div>
+    <div class="footer box">Footer</div>
+  </div>
+  </body>
+</html>

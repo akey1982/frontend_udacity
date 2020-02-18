@@ -1,5 +1,73 @@
-#hoverMe:hover{
 
-background-color: green;
+.box {
+
+    border: 3px solid rebeccapurple;
+    width: 250px;
+    height: 150px;
+   
+  
+  }
+  
+
+  #typo{
+
+    text-align: left;
+    color: bl;
+    width: 70%;
+    margin: auto;
+
+
+  }
+
+
+
+.container{
+
+display: flex;
+flex-direction: row;
+border: 5px solid steelblue;
+justify-content:space-evenly;
+/*align-items:stretch;*/
+
+}  
+
+
+.images{
+
+margin: 100px;
+width: 500px;
+height: 200px;
+background-color: limegreen;
+border-radius: 85%;
+padding: 200px;
 
 }
+
+  #one {
+    background: red;
+    /*order: 2;*/
+    
+    
+    /*top: 100px;*/
+
+
+    /*left: 100px;*/
+    /*z-index: 100;*/
+  }
+  
+  #two {
+   
+  /* order: 1;*/
+    background: yellow;
+   
+    /*top: 50px;*/
+    /*left: 50px;*/
+   /* z-index:99;*/
+  }
+ 
+  #three{
+        /*order: 3;*/
+    background: blue;
+    /*z-index: 98;*/
+ }
+
